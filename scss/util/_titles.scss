@@ -1,0 +1,13 @@
+@use "../layout/flex" as *;
+@use "../layout/breakpoints" as *;
+
+.homepage-title {
+  @include flex-center;
+  padding: 1.8em;
+  font-size: 2vw;
+  text-align: center;
+  @include breakpoint-down(medium) {
+    padding: 1.1em;
+    font-size: 4vw;
+  }
+}
